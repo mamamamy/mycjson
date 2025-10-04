@@ -1,0 +1,83 @@
+{
+  "meta": {
+    "version": "3.2.1-rc1§",
+    "timestamp": 1730001234567.890123,
+    "is_active": true,
+    "description": "JSON包含：\n1. 换行符\n2. 双引号\"示例\"\n3. 反斜杠：\\\n4. Unicode符号：✓🚀"
+  },
+  "users": [
+    {
+      "id": 10001,
+      "name": "O'Neil Doe",
+      "profile": {
+        "bio": "Line1\r\nLine2带制表符\t\t缩进",
+        "avatar": null,
+        "hobbies": [
+          "coding",
+          "hiking",
+          42,
+          true
+        ]
+      },
+      "credentials": {
+        "password": "$2b$12$abcdefghijklmnopqrstuvwxyz",
+        "last_login": "2024-09-01T12:34:56Z"
+      }
+    },
+    {
+      "id": 10002,
+      "name": "李四",
+      "profile": {},
+      "credentials": {
+        "password": "",
+        "last_login": null
+      }
+    }
+  ],
+  "config": {
+    "limits": {
+      "max_size": 1073741824,
+      "timeout": 3600.5,
+      "nested": {
+        "level1": {
+          "level2": {
+            "value": "深层嵌套值📌"
+          }
+        }
+      }
+    },
+    "patterns": [
+      "^[0-9]{3}-[0-9]{2}-[0-9]{4}$",
+      "^user@domain\\.com$"
+    ]
+  },
+  "data": [
+    [
+      1,
+      2.71828,
+      -345,
+      null,
+      false
+    ],
+    [
+      "a",
+      "b\\c",
+      "d\"e",
+      ""
+    ],
+    [
+      {
+        "key": "value"
+      },
+      []
+    ]
+  ],
+  "numbers": [
+    0,
+    -0,
+    9876543210123456789,
+    3.141592653589793,
+    1e+30,
+    -2.5E-40
+  ]
+}
