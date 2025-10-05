@@ -52,6 +52,7 @@ static cj_value *create_cj_value(int type) {
   cj_value *value = cj_malloc(sizeof(cj_value));
   memset(value, 0, sizeof(cj_value));
   value->type = type;
+  return value;
 }
 
 static void skip_whitespace(const char **pp) {
